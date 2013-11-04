@@ -15,7 +15,7 @@
     },
     "target-dir": "Bangpound/Bundle/PubsubBundle",
     "require": {
-        "sonata-project/admin-bundle": "dev-master",
+        "sonata-project/admin-bundle": "~2.2.7",
         "sputnik/pubsub-bundle": "~0.3.0"
     }
 }
