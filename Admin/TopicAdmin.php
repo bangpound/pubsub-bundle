@@ -83,7 +83,7 @@ class TopicAdmin extends Admin
     protected function configureShowFields(ShowMapper $filter)
     {
         $filter
-            ->add('topicUrl', null, array('template' => 'RshiefPubsubBundle:CRUD:show_orm_one_to_one.html.twig'))
+            ->add('topicUrl', null, array('template' => 'BangpoundPubsubBundle:CRUD:show_orm_one_to_one.html.twig'))
             ->add('hubName')
             ->add('createdAt')
             ->add('updatedAt')

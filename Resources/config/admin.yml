@@ -1,9 +1,9 @@
 services:
     rshief.pubsub.topic:
         class: Bangpound\Bundle\PubsubBundle\Admin\TopicAdmin
-        arguments: [ ~ , '%sputnik_pubsub.model.topic.class%', 'RshiefPubsubBundle:CRUD' ]
+        arguments: [ ~ , '%sputnik_pubsub.model.topic.class%', 'BangpoundPubsubBundle:CRUD' ]
         tags:
             - { name: sonata.admin, manager_type: orm, group: PubSub, label: Topic }
         calls:
-            - [ setTranslationDomain, [ 'RshiefPubsubBundle' ] ]
+            - [ setTranslationDomain, [ 'BangpoundPubsubBundle' ] ]
             - [ setHubSubscriber, [ '@sputnik_pubsub.hub_subscriber' ] ]
