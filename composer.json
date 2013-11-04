@@ -1,0 +1,21 @@
+{
+    "name": "bangpound/pubsub-bundle",
+    "description": "Pubsub bundle for Castle.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Benjamin Doherty",
+            "email": "bjd@bangpound.org"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Bangpound\\Bundle\\PubsubBundle\\": ""
+        }
+    },
+    "target-dir": "Bangpound/Bundle/PubsubBundle",
+    "require": {
+        "sonata-project/admin-bundle": "dev-master",
+        "sputnik/pubsub-bundle": "~0.3.0"
+    }
+}
