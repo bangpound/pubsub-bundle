@@ -9,11 +9,10 @@
         }
     ],
     "autoload": {
-        "psr-0": {
+        "psr-4": {
             "Bangpound\\Bundle\\PubsubBundle\\": ""
         }
     },
-    "target-dir": "Bangpound/Bundle/PubsubBundle",
     "require": {
         "sonata-project/admin-bundle": "~2.2",
         "sputnik/pubsub-bundle": "~0.3.0"
