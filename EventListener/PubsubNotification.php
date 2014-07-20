@@ -10,7 +10,6 @@ namespace Bangpound\Bundle\PubsubBundle\EventListener;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Sputnik\Bundle\PubsubBundle\PubsubEvents;
 use Sputnik\Bundle\PubsubBundle\Event\NotificationReceivedEvent;
-use Sonata\NotificationBundle\Backend\BackendInterface;
 
 /**
  * Class PubsubNotification

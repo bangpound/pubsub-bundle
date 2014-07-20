@@ -23,7 +23,6 @@ services:
             - { name: sputnik_pubsub.hub }
 
     bangpound_pubsub.notification_listener:
-        arguments: [ "@sonata.notification.backend" ]
         class: %bangpound_pubsub.notification_listener.class%
         tags:
             - { name: kernel.event_subscriber }

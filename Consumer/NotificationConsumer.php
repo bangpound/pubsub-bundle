@@ -5,11 +5,10 @@ use Bangpound\Atom\DataBundle\CouchDocument\SourceType;
 use Doctrine\CouchDB\Attachment;
 use Doctrine\Common\Persistence\ObjectManager;
 use JMS\Serializer\Exception\RuntimeException;
+use OldSound\RabbitMqBundle\RabbitMq\ConsumerInterface;
+use PhpAmqpLib\Message\AMQPMessage;
 use Psr\Log\LoggerAwareInterface;
 use Psr\Log\LoggerInterface;
-use Sonata\NotificationBundle\Consumer\ConsumerEvent;
-use Sonata\NotificationBundle\Consumer\ConsumerInterface;
-use Sonata\NotificationBundle\Model\Message;
 use JMS\Serializer\SerializerInterface;
 
 /**
@@ -72,10 +71,10 @@ class NotificationConsumer implements ConsumerInterface, LoggerAwareInterface
     /**
      * {@inheritdoc}
      */
-    public function process(ConsumerEvent $event)
+    public function execute(AMQPMessage $msg)
     {
         /* @var $message Message */
-        $message = $event->getMessage();
+        $message = $msg->getMessage();
 
         $serializer = $this->serializer;
         $content = $message->getValue('content');
