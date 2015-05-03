@@ -14,7 +14,6 @@
         }
     },
     "require": {
-        "sonata-project/admin-bundle": "~2.2",
         "sputnik/pubsub-bundle": "~0.3.0"
     },
     "extra": {
